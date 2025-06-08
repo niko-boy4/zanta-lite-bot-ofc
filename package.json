@@ -1,12 +1,12 @@
 {
-  "name": "queen_anju",
+  "name": "zanta-lite-bot-ofc",
   "version": "4",
   "description": "A Simple WhatsApp bot created By King-Rashmika",
-  "main": "queen.js",
+  "main": "index.js",
   "scripts": {
-    "start": "pm2 start queen.js --deep-monitoring --attach --name Queen_Anju",
-    "stop": "pm2 stop Queen_Anju",
-    "restart": "pm2 restart Queen_Anju"
+    "start": "pm2 start index.js --deep-monitoring --attach --name zanta-lite-bot-ofc",
+    "stop": "pm2 stop zanta-lite-bot-ofc",
+    "restart": "pm2 restart zanta-lite-bot-ofc"
   },
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
