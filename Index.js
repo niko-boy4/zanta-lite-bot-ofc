@@ -35,12 +35,12 @@ const {
       const sess = require('./config');
     if (!fs.existsSync(__dirname + '/sessions/creds.json')) {
     if(!sess.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
-    const sessdata = sess.SESSION_ID.split("Manu-MD&")[1];
+    const sessdata = sess.SESSION_ID.split("Lakiya-Md=")[1];
     const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
     filer.download((err, data) => {
     if(err) throw err
     fs.writeFile(__dirname + '/sessions/creds.json', data, () => {
-    console.log("BUNNY-MD Session downloaded ✅")
+    console.log("Session downloaded ✅")
     })})}
     
     const express = require("express");
